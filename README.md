@@ -36,7 +36,7 @@ gulp
 ## Customizations
 
 By default a Sass version of [Bootstrap](http://getbootstrap.com/) 
-and a [custom Sass file](https://github.com/iwatakeshi/doxx-theme-starter-kit/blob/master/scss/index.scss) is used for the starter kit. Also, the starter kit is using gulp as its build system and it should be easy enough to understand and see that gulp is doing most of the hard work including minification.
+and a [custom Sass file](https://github.com/iwatakeshi/doxx-theme-starter-kit/blob/master/scss/index.scss) is used for the starter kit. Also, the starter kit is using gulp as its build system and it should be easy enough to see and understand that gulp is doing most of the hard work including minification.
 
 ## Publish
 
