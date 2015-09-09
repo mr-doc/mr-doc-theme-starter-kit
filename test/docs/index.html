@@ -36,6 +36,13 @@
 <li>Gulp</li>
 <li>Bower</li>
 </ul>
+<h2>Usage</h2>
+<p>Create a bower file using <code>bower init</code> and prefix the name of your theme with
+<code>doxx-theme-</code> and add <code>doxx</code> as your keyword. Then add the following dependencies using <code>bower i --save</code>:</p>
+<ul>
+<li><code>prism</code> - for syntax highlighting</li>
+<li><code>bootstrap-sass</code> - for labels and other components</li>
+</ul>
 <h2>Build</h2>
 <pre><code class="language-bash"># Build the theme for production
 gulp build
@@ -48,13 +55,7 @@ gulp
 <p>By default a Sass version of <a href="http://getbootstrap.com/">Bootstrap</a>
 and a <a href="https://github.com/iwatakeshi/doxx-theme-starter-kit/blob/master/scss/index.scss">custom Sass file</a> is used for the starter kit. Also, the starter kit is using gulp as its build system and it should be easy enough to understand and see that gulp is doing most of the hard work including minification.</p>
 <h2>Publish</h2>
-<p>To publish your theme, create a bower file using <code>bower init</code> and prefix the name of your theme with
-<code>doxx-theme-</code> and add <code>doxx</code> as your keyword. Then add the following dependencies using <code>bower i --save</code>:</p>
-<ul>
-<li><code>prism</code> - for syntax highlighting</li>
-<li><code>bootstrap-sass</code> - for labels and other components</li>
-</ul>
-<p>Once the the file has been created, you are free to customize the template.
+<p>Once the bower file has been created, you are free to customize the template under <code>template/</code>.
 You may also edit the gulp file if you add more dependencies through bower.</p>
 <p>Just make sure that your assets are placed under <code>assets/</code> and that you edit the template to add those assets.</p>
 <p>Note that you may assume the template will be in the same directory as the assets so there is no

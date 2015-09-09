@@ -11,6 +11,14 @@ A responsive starter kit for your Doxx themes.
 * Gulp
 * Bower
 
+## Usage
+
+Create a bower file using `bower init` and prefix the name of your theme with
+`doxx-theme-` and add `doxx` as your keyword. Then add the following dependencies using `bower i --save`:
+
+* `prism` - for syntax highlighting
+* `bootstrap-sass` - for labels and other components
+
 ## Build
 
 ```bash
@@ -32,13 +40,7 @@ and a [custom Sass file](https://github.com/iwatakeshi/doxx-theme-starter-kit/bl
 
 ## Publish
 
-To publish your theme, create a bower file using `bower init` and prefix the name of your theme with
-`doxx-theme-` and add `doxx` as your keyword. Then add the following dependencies using `bower i --save`:
-
-* `prism` - for syntax highlighting
-* `bootstrap-sass` - for labels and other components
-
-Once the the file has been created, you are free to customize the template.
+Once the bower file has been created, you are free to customize the template under `template/`.
 You may also edit the gulp file if you add more dependencies through bower. 
 
 Just make sure that your assets are placed under `assets/` and that you edit the template to add those assets.
