@@ -1,5 +1,5 @@
 # Doxx Theme Starter Kit
-A responsive starter kit for your Doxx themes.
+A responsive starter kit for Doxx themes. 
 
 *This starter kit is based on [doxx-theme-cayman](https://github.com/iwatakeshi/doxx-theme-cayman).*
 
