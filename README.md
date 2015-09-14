@@ -19,6 +19,8 @@ Create a bower file using `bower init` and prefix the name of your theme with
 * `prism` - for syntax highlighting
 * `bootstrap-sass` - for labels and other components
 
+Of course, you are not limited to using bootstrap or sass and are free to use whatever language you like.
+
 ## Build
 
 ```bash
@@ -45,15 +47,15 @@ You may also edit the gulp file if you add more dependencies through bower.
 
 Just make sure that your assets are placed under `assets/` and that you edit the template to add those assets.
 
-Note that you may assume the template will be in the same directory as the assets so there is no
-need to worry about where a asset may be. 
+As far as asset's paths are concerned, the relative path is taken care for you by Doxx. You will only need to add
+`target.relative.path` to the asset's path as shown below.
 
 Example: 
 
 ```jade
-script(src='js/...')
+script(src=target.relative.path + 'js/...')
 
-link(rel='stylesheet', href='css/...')
+link(rel='stylesheet', href=target.relative.path + 'css/...')
 ```
 
 When all is set and done, you may publish the theme and use it with Doxx!

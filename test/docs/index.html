@@ -46,6 +46,7 @@
 <li><code>prism</code> - for syntax highlighting</li>
 <li><code>bootstrap-sass</code> - for labels and other components</li>
 </ul>
+<p>Of course, you are not limited to using bootstrap or sass and are free to use whatever language you like.</p>
 <h2>Build</h2>
 <pre><code class="language-bash"># Build the theme for production
 gulp build
@@ -61,12 +62,12 @@ and a <a href="https://github.com/iwatakeshi/doxx-theme-starter-kit/blob/master/
 <p>Once the bower file has been created, you are free to customize the template under <code>template/</code>.
 You may also edit the gulp file if you add more dependencies through bower.</p>
 <p>Just make sure that your assets are placed under <code>assets/</code> and that you edit the template to add those assets.</p>
-<p>Note that you may assume the template will be in the same directory as the assets so there is no
-need to worry about where a asset may be.</p>
+<p>As far as asset paths are concerned, the relative path is taken care for you by Doxx. You will only need to add
+<code>target.relative.path</code> to the asset's path as shown below.</p>
 <p>Example:</p>
-<pre><code class="language-jade">script(src='js/...')
+<pre><code class="language-jade">script(src=target.relative.path + 'js/...')
 
-link(rel='stylesheet', href='css/...')
+link(rel=target.relative.path + 'stylesheet', href='css/...')
 </code></pre>
 <p>When all is set and done, you may publish the theme and use it with Doxx!</p>
 <h2>License</h2>
