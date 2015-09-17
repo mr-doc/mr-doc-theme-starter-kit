@@ -1,15 +1,16 @@
 {
-  "name": "doxx-theme-starter-kit",
+  "name": "mrdoc-theme-starter-kit",
   "description": "A responsive starter kit for Doxx themes. ",
+  "private":true,
   "version": "1.0.0",
-  "homepage": "http://github.com/iwatakeshi/doxx-theme-starter-kit",
+  "homepage": "http://github.com/mr-doc/mrdoc-theme-starter-kit",
   "author": "iwatakeshi",
   "scripts": {
     "test": "gulp build",
     "start": "npm i && bower i"
   },
   "bugs": {
-    "url": "https://github.com/iwatakeshi/doxx-theme-starter-kit/issues"
+    "url": "https://github.com/mr-doc/mrdoc-theme-starter-kit/issues"
   },
   "private": true,
   "devDependencies": {
