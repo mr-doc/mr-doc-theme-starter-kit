@@ -1,7 +1,7 @@
-# Doxx Theme Starter Kit
-A responsive starter kit for Doxx themes. 
+# Mr. Doc Theme Starter Kit
+A responsive starter kit for Mr. Doc themes. 
 
-*This starter kit is based on [doxx-theme-cayman](https://github.com/iwatakeshi/doxx-theme-cayman).*
+*This starter kit is based on [mrdoc-theme-cayman](https://github.com/iwatakeshi/doxx-theme-cayman).*
 
 
 ## Requirements
@@ -13,8 +13,7 @@ A responsive starter kit for Doxx themes.
 
 ## Usage
 
-Create a bower file using `bower init` and prefix the name of your theme with
-`doxx-theme-` and add `doxx` as your keyword. Then add the following dependencies using `bower i --save`:
+Create a bower file using `bower init` and add the following dependencies using `bower i --save`:
 
 * `prism` - for syntax highlighting
 * `bootstrap-sass` - for labels and other components
@@ -42,13 +41,19 @@ and a [custom Sass file](https://github.com/iwatakeshi/doxx-theme-starter-kit/bl
 
 ## Publish
 
-Once the bower file has been created, you are free to customize the template under `template/`.
+Create a package and add the following dev dependencies:
+
+```bash
+npm i --save-dev gulp gulp-shell gulp-connect gulp-ruby-sass gulp-clipboard gulp-uglify gulp-uglifycss lodash
+```
+
+
+Once you have created the package, you are free to customize the template under `template/`.
 You may also edit the gulp file if you add more dependencies through bower. 
 
 Just make sure that your assets are placed under `assets/` and that you edit the template to add those assets.
 
-As far as asset's paths are concerned, the relative path is taken care for you by Doxx. You will only need to add
-`target.relative.path` to the asset's path as shown below.
+As far as the asset's paths are concerned, the relative path is taken care for you by Mr. Doc. You will only need to add `target.relative.path` to the asset's path as shown below.
 
 Example: 
 
@@ -58,7 +63,7 @@ script(src=target.relative.path + 'js/...')
 link(rel='stylesheet', href=target.relative.path + 'css/...')
 ```
 
-When all is set and done, you may publish the theme and use it with Doxx!
+When all is set and done, you may publish the theme!
 
 ## License
 
