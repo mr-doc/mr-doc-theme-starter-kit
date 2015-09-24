@@ -37,7 +37,7 @@ html(lang='en-us')
               each target in targets
                 if file.name === target.file.name
                   li(class=(file.name !== current.name ? "":"active"))
-                    a(href=target.relative.path + file.relative.name) #{file.name}
+                    a(href=target.path) #{file.name}
                       if file.name === current.name
                           ul.nav.nav-stacked
                             each symbol in symbols
