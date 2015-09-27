@@ -43,18 +43,19 @@ _.extend(assets, {
 });
 
 // Doxx commands
-var cmd = { source:' --source ', target:' --target ', template: ' --template ' };
+var cmd = { source:' --source ', output:' --output ', template: ' --template ', kit: ' --kit ' };
 
 // Doxx commands with path
 var source = cmd.source +  join(cwd, test.src.path);
-var target = cmd.target + join(cwd, test.docs.path);
+var output = cmd.output + join(cwd, test.docs.path);
 var template = cmd.template + join(cwd, 'template/index.jade');
-
+var kit = cmd.kit;
+cmd = source + output + template + kit;
 /** ---------------------- Tasks ---------------------- */
 
 // Task 1: Build the docs
 gulp.task('docs',shell.task([
-    './node_modules/doxx/bin/doxx ' + source + target + template
+    './node_modules/mr-doc/bin/mr-doc ' + cmd
 ]));
 
 // Task 2: Build Sass and copy it into the test dir and assets
