@@ -18,7 +18,7 @@ Create a bower file using `bower init` and add the following dependencies using 
 * `prism` - for syntax highlighting
 * `bootstrap-sass` - for labels and other components
 
-Of course, you are not limited to using bootstrap or sass and are free to use whatever language you like.
+Of course, you are not limited to using bootstrap or sass and are free to use whatever frontend framework you like.
 
 ## Build
 
