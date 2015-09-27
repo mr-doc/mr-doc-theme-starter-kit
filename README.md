@@ -63,7 +63,7 @@ script(src=target.relative.path + 'js/...')
 link(rel='stylesheet', href=target.relative.path + 'css/...')
 ```
 
-When all is set and done, you may publish the theme!
+When all is set and done, take a screenshot of your theme, add it to your readme using [Google Drive to host your image)(https://www.thegooru.com/how-to-host-an-image-from-google-drive/), and publish the theme!
 
 ## License
 
