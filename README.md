@@ -41,7 +41,7 @@ and a [custom Sass file](https://github.com/iwatakeshi/doxx-theme-starter-kit/bl
 
 ## Publish
 
-Create a package and add the following dev dependencies:
+Create a package with `mr-doc-theme` as the keyword and add the following dev dependencies:
 
 ```bash
 npm i --save-dev gulp gulp-shell gulp-connect gulp-ruby-sass gulp-clipboard gulp-uglify gulp-uglifycss lodash
